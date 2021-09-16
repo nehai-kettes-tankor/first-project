@@ -24,9 +24,11 @@ Számítások pontosságának és gyorsaságának fejlesztése érdekében szere
 
 
 ## 6. Követelménylista
-K01 Átlátható: könnyen kezelhető rendszer  
-K02 Felhasználóbarát megjelenés: grafikus felület nyomógombokkal, eredmény letisztult kijelzése  
-K03 Időhatékonyság: Számítások gyors elvégzése
+|ID|Modul|Kifejtés|
+|--|-----|--------|
+|K01|Átlátható|Könnyen kezelhető rendszer
+|K02|Felhasználóbarát megjelenés|Grafikus felület nyomógombokkal, eredmény letisztult kijelzése
+|K03|Időhatékonyság|Számítások gyors elvégzése
 
 
 ## 7. Fogalomszótár
