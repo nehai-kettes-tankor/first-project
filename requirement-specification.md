@@ -5,7 +5,7 @@ Könyvelő cégünk munkájához sok matematikai számítás elvégzésére van 
 
 
 ## 2. Vágyálom rendszer
-Számítások pontosságának és gyorsaságának fejlesztése érdekében szeretnénk egy szoftver alapú számológépet amely az összes dolgozó rendelkezésére áll.
+A számítások pontosságának és gyorsaságának fejlesztése érdekében szeretnénk egy szoftver alapú számológépet, amely az összes dolgozó rendelkezésére áll.
 
 
 ## 3. Jelenlegi üzleti folymatok
