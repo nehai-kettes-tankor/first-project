@@ -1,10 +1,10 @@
 # Számológép követelményspecifikáció
 
-## 1. Jelenlegi helyzet:
+## 1. Jelenlegi helyzet
 Könyvelő cégünk munkájához sok matematikai számítás elvégzésére van szükség, melyeket eddig papíron és fejben végeztünk el. Cégünk most bővült számítógépekkel, melyek minden kollégának rendelkezésére állnak, de sajnálatos módon számolásra alkalmas szoftver nem található rajtuk.
 
 
-## 2. Vágyálom rendszer:
+## 2. Vágyálom rendszer
 Számítások pontosságának és gyorsaságának fejlesztése érdekében szeretnénk egy szoftver alapú számológépet amely az összes dolgozó rendelkezésére áll.
 
 
@@ -14,7 +14,7 @@ Számítások pontosságának és gyorsaságának fejlesztése érdekében szere
 3.1.2 Kamat számítása => összeadás, szorzás papíron
 
 
-## 4. Igényelt üzleti folyamatok:
+## 4. Igényelt üzleti folyamatok
 4.1 Számítások pontosságának szavatolása  
 4.1.1 Műveleti sorrend betartása
 
