@@ -12,7 +12,7 @@ Egy MVC paradigmát követő Java program. Fontos a pontosság, emiatt a nagy po
 |ID|Modul|Kifejtés|
 |--|-----|--------|
 |K01|Átlátható|Könnyen kezelhető rendszer
-|K02|Felhasználóbarát megjelenés|Grafikus felület nyomógombokkal, eredmény letisztult kijelzése
+|K02|Felhasználóbarát megjelenés|Grafikus felület nyomógombokkal. Eredmény letisztult kijelzése
 |K03|Időhatékonyság|Számítások gyors elvégzése
 
 
