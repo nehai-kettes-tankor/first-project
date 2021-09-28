@@ -17,4 +17,4 @@ Egy MVC paradigmát követő Java program. Fontos a pontosság, emiatt a nagy po
 
 
 ## 4. Használati esetek
-![](https://raw.githubusercontent.com/nehai-kettes-tankor/first-project/master/use-case.png)
+![](https://raw.githubusercontent.com/nehai-kettes-tankor/first-project/master/Documents/use-case.png)
