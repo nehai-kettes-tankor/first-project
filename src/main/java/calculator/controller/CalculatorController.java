@@ -13,8 +13,7 @@ public class CalculatorController {
     private TextField display;
 
     private String input = "";
-    private double result = 0.0;
-    private boolean lastButtonWasOperator = true;
+    private boolean isResult = false;
 
     @FXML
     private void initialize() {
@@ -23,33 +22,41 @@ public class CalculatorController {
 
     @FXML
     public void numberPressed(ActionEvent event) {
+        if(isResult){
+            input = "";
+            drawOnDisplay(input);
+            isResult = false;
+        }
         String value = ((Button)event.getSource()).getText();
         input = input.concat(value);
-        lastButtonWasOperator = false;
         drawOnDisplay(input);
     }
+
     @FXML
     public void operatorPressed(ActionEvent event) {
+        isResult = false;
         String value = ((Button)event.getSource()).getText();
-        if(!lastButtonWasOperator){
-            input =input.concat(value);
-            lastButtonWasOperator = true;
-        } else{
-            System.out.println("Érvénytelen szintaxis!");
-        }
+        input = input.concat(value);
         drawOnDisplay(input);
     }
 
     @FXML
-    public void equalsPressed(ActionEvent event) {
-        result = Calculate.solve(input);
+    public void equalsPressed() {
+        double result = Calculate.solve(input);
         input = Double.toString(result);
         drawOnDisplay(input);
+        isResult = true;
     }
 
     @FXML
-    public void clearPressed(ActionEvent actionEvent) {
+    public void clearPressed() {
         input = "";
+        drawOnDisplay(input);
+    }
+
+    @FXML
+    public void backspacePressed() {
+        input = display.getText().substring(0, input.length() - 1);
         drawOnDisplay(input);
     }
 
