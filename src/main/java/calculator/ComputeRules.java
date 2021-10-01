@@ -31,7 +31,6 @@ public class ComputeRules {
                 input.remove(i + 1);
                 input.remove(i - 1);
             }else{
-                System.out.println(input.indexOf("+"));
                 int i = input.indexOf("-");
                 double dif = Double.parseDouble(input.get(i - 1)) - Double.parseDouble(input.get(i + 1));
                 input.set(i, String.valueOf(dif));
