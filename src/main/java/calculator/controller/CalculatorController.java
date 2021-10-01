@@ -42,10 +42,15 @@ public class CalculatorController {
 
     @FXML
     public void equalsPressed() {
-        double result = Calculate.solve(input);
-        input = Double.toString(result);
-        drawOnDisplay(input);
-        isResult = true;
+        try {
+            double result = Calculate.solve(input);
+            input = Double.toString(result);
+            drawOnDisplay(input);
+            isResult = true;
+        } catch (UnsupportedOperationException e) {
+            input = "";
+            drawOnDisplay("Szintaktikai hiba!");
+        }
     }
 
     @FXML
@@ -56,7 +61,9 @@ public class CalculatorController {
 
     @FXML
     public void backspacePressed() {
-        input = display.getText().substring(0, input.length() - 1);
+        input = display.getText();
+        if (input.length() > 0)
+            input =  input.substring(0, input.length() - 1);
         drawOnDisplay(input);
     }
 
