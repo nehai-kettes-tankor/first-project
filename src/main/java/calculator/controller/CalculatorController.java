@@ -1,5 +1,6 @@
 package calculator.controller;
 
+import calculator.Calculate;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -11,48 +12,48 @@ public class CalculatorController {
     @FXML
     private TextField display;
 
-    private long num1, currentValue;
-    private String operator = "";
-
+    private String input = "";
+    private double result = 0.0;
+    private boolean lastButtonWasOperator = true;
 
     @FXML
     private void initialize() {
-        drawOnDisplay();
+        drawOnDisplay(input);
     }
 
     @FXML
     public void numberPressed(ActionEvent event) {
         String value = ((Button)event.getSource()).getText();
-        currentValue = currentValue * 10 + Long.parseLong(value);
-        drawOnDisplay();
+        input = input.concat(value);
+        lastButtonWasOperator = false;
+        drawOnDisplay(input);
     }
-
     @FXML
     public void operatorPressed(ActionEvent event) {
         String value = ((Button)event.getSource()).getText();
-        operator = value;
-        num1 = currentValue;
-        currentValue = 0;
-        drawOnDisplay();
-    }
-
-    public void equalsPressed(ActionEvent event) {
-        //output.setText(String.valueOf(model.calculate(cuccok)));
-        display.setText(num1 + operator + currentValue);
-    }
-
-    public void clearPressed(ActionEvent actionEvent) {
-        num1 = 0;
-        currentValue = 0;
-        operator = "";
-        display.setText("");
-    }
-
-    public void drawOnDisplay(){
-        if(num1 == 0){
-            display.setText(currentValue + "");
-        } else {
-            display.setText(num1 + operator + currentValue);
+        if(!lastButtonWasOperator){
+            input =input.concat(value);
+            lastButtonWasOperator = true;
+        } else{
+            System.out.println("Érvénytelen szintaxis!");
         }
+        drawOnDisplay(input);
+    }
+
+    @FXML
+    public void equalsPressed(ActionEvent event) {
+        result = Calculate.solve(input);
+        input = Double.toString(result);
+        drawOnDisplay(input);
+    }
+
+    @FXML
+    public void clearPressed(ActionEvent actionEvent) {
+        input = "";
+        drawOnDisplay(input);
+    }
+
+    private void drawOnDisplay(String content){
+        display.setText(content);
     }
 }
