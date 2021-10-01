@@ -1,6 +1,6 @@
 package calculator.controller;
 
-import calculator.Calculate;
+import calculator.model.Calculate;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
