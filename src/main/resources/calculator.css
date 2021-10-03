@@ -1,0 +1,15 @@
+.board{
+    -fx-background-color: #004282;
+}
+
+.operator{
+    -fx-background-color: #cd9af3;
+}
+
+.number{
+    -fx-background-color: #90ee90;
+}
+
+.display{
+    -fx-background-color: #dff3ff;
+}
