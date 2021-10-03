@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.controller.CalculatorController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="501.0" styleClass="board" stylesheets="@calculator.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.controller.CalculatorController">
    <children>
-      <TextField fx:id="display" alignment="CENTER_RIGHT" editable="false" prefHeight="133.0" prefWidth="444.0">
+      <TextField fx:id="display" alignment="CENTER_RIGHT" editable="false" prefHeight="133.0" prefWidth="444.0" styleClass="display">
          <VBox.margin>
             <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
          </VBox.margin>
@@ -19,56 +19,27 @@
       </TextField>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
          <children>
-            <Button fx:id="sevenButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" text="7">
+            <Button fx:id="sevenButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" styleClass="number" text="7">
                <font>
                   <Font size="35.0" />
                </font>
             </Button>
-            <Button fx:id="eightButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" text="8">
+            <Button fx:id="eightButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" styleClass="number" text="8">
                <font>
                   <Font size="35.0" />
                </font>
             </Button>
-            <Button fx:id="nineButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" text="9">
+            <Button fx:id="nineButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" styleClass="number" text="9">
                <font>
                   <Font size="35.0" />
                </font>
             </Button>
-            <Button fx:id="slashButton" mnemonicParsing="false" onAction="#operatorPressed" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: darkgrey;" text="/">
+            <Button fx:id="slashButton" mnemonicParsing="false" onAction="#operatorPressed" prefHeight="75.0" prefWidth="75.0" styleClass="operator" text="/">
                <font>
                   <Font size="35.0" />
                </font>
             </Button>
-            <Button fx:id="plusButton" mnemonicParsing="false" onAction="#operatorPressed" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: darkgrey;" text="+">
-               <font>
-                  <Font size="35.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
-         <children>
-            <Button fx:id="fourButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" text="4">
-               <font>
-                  <Font size="35.0" />
-               </font>
-            </Button>
-            <Button fx:id="fiveButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" text="5">
-               <font>
-                  <Font size="35.0" />
-               </font>
-            </Button>
-            <Button fx:id="sixButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" text="6">
-               <font>
-                  <Font size="35.0" />
-               </font>
-            </Button>
-            <Button fx:id="starButton" mnemonicParsing="false" onAction="#operatorPressed" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: darkgrey;" text="*">
-               <font>
-                  <Font size="35.0" />
-               </font>
-            </Button>
-            <Button fx:id="minusButton" mnemonicParsing="false" onAction="#operatorPressed" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: darkgrey;" text="-">
+            <Button fx:id="plusButton" mnemonicParsing="false" onAction="#operatorPressed" prefHeight="75.0" prefWidth="75.0" styleClass="operator" text="+">
                <font>
                   <Font size="35.0" />
                </font>
@@ -77,27 +48,27 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
          <children>
-            <Button fx:id="oneButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" text="1">
+            <Button fx:id="fourButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" styleClass="number" text="4">
                <font>
                   <Font size="35.0" />
                </font>
             </Button>
-            <Button fx:id="twoButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" text="2">
+            <Button fx:id="fiveButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" styleClass="number" text="5">
                <font>
                   <Font size="35.0" />
                </font>
             </Button>
-            <Button fx:id="threeButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" text="3">
+            <Button fx:id="sixButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" styleClass="number" text="6">
                <font>
                   <Font size="35.0" />
                </font>
             </Button>
-            <Button fx:id="decimalButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: darkgrey;" text=".">
+            <Button fx:id="starButton" mnemonicParsing="false" onAction="#operatorPressed" prefHeight="75.0" prefWidth="75.0" styleClass="operator" text="*">
                <font>
                   <Font size="35.0" />
                </font>
             </Button>
-            <Button fx:id="backspaceButton" mnemonicParsing="false" onAction="#backspacePressed" prefHeight="75.0" prefWidth="75.0" style="-fx-background-color: darkgrey;" text="←">
+            <Button fx:id="minusButton" mnemonicParsing="false" onAction="#operatorPressed" prefHeight="75.0" prefWidth="75.0" styleClass="operator" text="-">
                <font>
                   <Font size="35.0" />
                </font>
@@ -106,17 +77,46 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
          <children>
-            <Button fx:id="zeroButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" text="0">
+            <Button fx:id="oneButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" styleClass="number" text="1">
                <font>
                   <Font size="35.0" />
                </font>
             </Button>
-            <Button fx:id="equalsButton" defaultButton="true" mnemonicParsing="false" onAction="#equalsPressed" prefHeight="75.0" prefWidth="165.0" style="-fx-background-color: darkgrey;" text="=">
+            <Button fx:id="twoButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" styleClass="number" text="2">
                <font>
                   <Font size="35.0" />
                </font>
             </Button>
-            <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clearPressed" prefHeight="75.0" prefWidth="165.0" style="-fx-background-color: darkgrey;" text="TÖRLÉS">
+            <Button fx:id="threeButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" styleClass="number" text="3">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="decimalButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" styleClass="operator" text=".">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="backspaceButton" mnemonicParsing="false" onAction="#backspacePressed" prefHeight="75.0" prefWidth="75.0" styleClass="operator" text="←">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+         <children>
+            <Button fx:id="zeroButton" mnemonicParsing="false" onAction="#numberPressed" prefHeight="75.0" prefWidth="75.0" styleClass="number" text="0">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="equalsButton" defaultButton="true" mnemonicParsing="false" onAction="#equalsPressed" prefHeight="75.0" prefWidth="165.0" styleClass="operator" text="=">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="clearButton" mnemonicParsing="false" onAction="#clearPressed" prefHeight="75.0" prefWidth="165.0" styleClass="operator" text="TÖRLÉS">
                <font>
                   <Font size="25.0" />
                </font>
