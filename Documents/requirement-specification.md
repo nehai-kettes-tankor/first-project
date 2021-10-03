@@ -12,11 +12,13 @@ A számítások pontosságának és gyorsaságának fejlesztése érdekében sze
 3.1 Gazdasággal kapcsolatos számítások  
 3.1.1 Bérszámfejtés => összeadás, szorzás papíron  
 3.1.2 Kamat számítása => összeadás, szorzás papíron
+3.1.3 Pénzügyi elemzés => összeadás, kivonás, szorzás, osztás papíron
 
 
 ## 4. Igényelt üzleti folyamatok
 4.1 Számítások pontosságának szavatolása  
 4.1.1 Műveleti sorrend betartása
+4.1.2 Negatív számok kezelése
 
 
 ## 5. Rendszerre vonatkozó szabályok
@@ -29,6 +31,7 @@ A számítások pontosságának és gyorsaságának fejlesztése érdekében sze
 |K01|Átlátható|Könnyen kezelhető rendszer
 |K02|Felhasználóbarát megjelenés|Grafikus felület nyomógombokkal. Eredmény letisztult kijelzése
 |K03|Időhatékonyság|Számítások gyors elvégzése
+|K04|Műveletek elvégzése|Képes elvégezni az alapműveleteket. Kezeli a negatív számokat is
 
 
 ## 7. Fogalomszótár
