@@ -17,7 +17,7 @@ A folyamatok szereplője a felhasználó lesz. A program grafikus felhasználói
 |K03|Időhatékonyság|Számítások gyors elvégzése
 
 ## Funkcionális terv
-*[UML diagram helye]*
+![](https://raw.githubusercontent.com/nehai-kettes-tankor/first-project/master/Documents/uml.png)
 
 ## Fizikai környezet
 A fejlesztés Java nyelven valósul meg Windows operációs rendszerre, illetve különböző Linux disztribúciókra.
