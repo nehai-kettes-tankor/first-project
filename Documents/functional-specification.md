@@ -14,6 +14,7 @@ Egy MVC paradigmát követő Java program. Fontos a pontosság, emiatt a nagy po
 |K01|Átlátható|Könnyen kezelhető rendszer
 |K02|Felhasználóbarát megjelenés|Grafikus felület nyomógombokkal. Eredmény letisztult kijelzése
 |K03|Időhatékonyság|Számítások gyors elvégzése
+|K04|Műveletek elvégzése|Képes elvégezni az alapműveleteket. Kezeli a negatív számokat is
 
 
 ## 4. Használati esetek
