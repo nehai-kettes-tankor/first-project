@@ -49,7 +49,7 @@ public class CalculatorController {
             isResult = true;
         } catch (UnsupportedOperationException e) {
             input = "";
-            drawOnDisplay("Szintaktikai hiba!");
+            drawOnDisplay("Hibás művelet!");
         }
     }
 
