@@ -3,11 +3,19 @@
 }
 
 .operator{
-    -fx-background-color: #cd9af3;
+    -fx-background-color: #b080d2;
+}
+
+.operator:hover{
+    -fx-background-color: #8d4faf;
 }
 
 .number{
     -fx-background-color: #90ee90;
+}
+
+.number:hover{
+    -fx-background-color: #4cbb4c;
 }
 
 .display{
