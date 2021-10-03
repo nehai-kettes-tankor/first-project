@@ -15,6 +15,7 @@ A folyamatok szereplője a felhasználó lesz. A program grafikus felhasználói
 |K01|Átlátható|Könnyen kezelhető rendszer
 |K02|Felhasználóbarát megjelenés|Grafikus felület nyomógombokkal, eredmény letisztult kijelzése
 |K03|Időhatékonyság|Számítások gyors elvégzése
+|K04|Műveletek elvégzése|Képes elvégezni az alapműveleteket. Kezeli a negatív számokat is
 
 ## Funkcionális terv
 ![](https://raw.githubusercontent.com/nehai-kettes-tankor/first-project/master/Documents/uml.png)
