@@ -11,7 +11,7 @@ A számítások pontosságának és gyorsaságának fejlesztése érdekében sze
 ## 3. Jelenlegi üzleti folymatok
 3.1 Gazdasággal kapcsolatos számítások  
 3.1.1 Bérszámfejtés => összeadás, szorzás papíron  
-3.1.2 Kamat számítása => összeadás, szorzás papíron
+3.1.2 Kamat számítása => összeadás, szorzás papíron  
 3.1.3 Pénzügyi elemzés => összeadás, kivonás, szorzás, osztás papíron
 
 
