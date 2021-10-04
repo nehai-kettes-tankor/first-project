@@ -22,6 +22,9 @@ A folyamatok szereplője a felhasználó lesz. A program grafikus felhasználói
 
 ## Fizikai környezet
 A fejlesztés Java nyelven valósul meg Windows operációs rendszerre, illetve különböző Linux disztribúciókra.
+
+## Absztrakt domain modell
+A Java program az MVC paradigmát követi. Fontos a pontosság, emiatt a nagy pontosságot megengedő *double* adattípussal dolgozunk. A gyorsaságot az algoritmusok hatékonysági elemzésével és optimalizálásával érjük el. A nagyobb felhasználhatóság érdekében egy platformfüggetlen rendszert hozunk létre. Külön figyelmet kell fordítani a tárhelyszükséglet is optimalizálására, hogy az alacsonyabb kapacitással rendelkező gépeknek se okozzon gondot.
     
 ## Architekturális terv
 A program külön telepítendő minden egyes gépre és nincsenek összeköttetésben. Túlterhelés emiatt csak a memória oldaláról történhet. Ha memóriahiány lép fel, azt a számológép nem tudja kezelni. Ekkor a program leáll. Ezt csak az erőforráshasználat megfelelő beosztásával lehet kiküszöbölni, ami a programnak nem része, így a felhasználó felelőssége. Probléma esetén a gép újraindítása vagy a feleslegesen futó alkalmazások leállítása segíthet.
