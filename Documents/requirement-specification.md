@@ -17,7 +17,7 @@ A számítások pontosságának és gyorsaságának fejlesztése érdekében sze
 
 ## 4. Igényelt üzleti folyamatok
 4.1 Számítások pontosságának szavatolása  
-4.1.1 Műveleti sorrend betartása
+4.1.1 Műveleti sorrend betartása  
 4.1.2 Negatív számok kezelése
 
 
